@@ -13,4 +13,6 @@ RUN rm -rf /usr/share/nginx/html/index.html
 
 ADD https://raw.githubusercontent.com/Pkumar1618/3-tier-architecture/refs/heads/main/readme.MD /usr/share/nginx/html/index.html
 
+RUN chmod 644 /usr/share/nginx/html/index.html
+
 CMD ["nginx", "-g", "daemon off;"]
