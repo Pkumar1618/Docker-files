@@ -11,7 +11,7 @@
 
 # ENV var-name=$var-name
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-9}
 
 ARG course="DevOps with Aws" \
     duration="120hrs" \
