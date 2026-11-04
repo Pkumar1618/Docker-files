@@ -10,8 +10,8 @@
 # You can set arg value to env variable
 
 # ENV var-name=$var-name
-
-FROM almalinux:9
+ARG version
+FROM almalinux:${version}
 
 ARG course="DevOps with Aws" \
     duration="120hrs" \
