@@ -16,5 +16,6 @@ FROM almalinux:${version:-9}
 ARG course="DevOps with Aws" \
     duration="120hrs" \
     trianer="Jhon"
+ENV duration=$duration
 RUN echo "course: $course, duration: $duration, trianer: $trianer, version: $version"
 CMD ["sleep","100"] 
